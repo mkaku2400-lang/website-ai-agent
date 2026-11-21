@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northgate Family Dental</title>
+<style>
+  :root { --ink:#13232b; --muted:#536872; --line:#dfe7ea; --teal:#0f766e; --sand:#f6f1ea; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family: Georgia, "Times New Roman", serif; color:var(--ink); background:#fff; }
+  .sans, nav, .btn, .small, table, .card p, footer { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 24px; }
+  header { border-bottom:1px solid var(--line); }
+  .bar { display:flex; align-items:center; justify-content:space-between; height:68px; }
+  .logo { font-size:21px; letter-spacing:.2px; }
+  .logo b { color:var(--teal); font-weight:normal; }
+  nav a { color:var(--muted); text-decoration:none; margin-left:22px; font-size:14.5px; }
+  nav a:hover { color:var(--ink); }
+  .hero { background:var(--sand); }
+  .hero .wrap { display:grid; grid-template-columns:1.2fr .8fr; gap:48px; padding:64px 24px 56px; align-items:center; }
+  h1 { font-size:44px; line-height:1.12; font-weight:normal; margin:0 0 18px; }
+  .lead { font-size:18px; line-height:1.6; color:var(--muted); margin:0 0 26px; max-width:34em; }
+  .btn { display:inline-block; background:var(--teal); color:#fff; text-decoration:none; padding:12px 20px; border-radius:6px; font-weight:600; font-size:15px; }
+  .btn.ghost { background:transparent; color:var(--teal); border:1px solid var(--teal); margin-left:10px; }
+  .hours { background:#fff; border:1px solid var(--line); border-radius:10px; padding:22px 24px; }
+  .hours h2 { font-size:18px; font-weight:normal; margin:0 0 12px; }
+  table { width:100%; border-collapse:collapse; font-size:14.5px; }
+  td { padding:7px 0; border-bottom:1px solid var(--line); }
+  td:last-child { text-align:right; color:var(--muted); }
+  .small { font-size:13px; color:var(--muted); margin:12px 0 0; }
+  section.block { padding:56px 0; }
+  h2.title { font-size:30px; font-weight:normal; margin:0 0 8px; }
+  .sub { color:var(--muted); margin:0 0 28px; font-size:16px; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .card { border:1px solid var(--line); border-radius:10px; padding:20px; }
+  .card h3 { font-size:19px; font-weight:normal; margin:0 0 8px; }
+  .card p { margin:0; color:var(--muted); font-size:14.5px; line-height:1.55; }
+  .price { display:block; margin-top:12px; color:var(--ink); font-weight:600; }
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:40px; border-top:1px solid var(--line); }
+  .split p { color:var(--muted); line-height:1.65; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size:15px; }
+  footer { border-top:1px solid var(--line); padding:26px 0 90px; color:var(--muted); font-size:13px; }
+  @media (max-width:820px) {
+    .hero .wrap, .split { grid-template-columns:1fr; }
+    .grid { grid-template-columns:1fr; }
+    h1 { font-size:34px; }
+    nav { display:none; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <div class="logo">Northgate <b>Family Dental</b></div>
+    <nav><a href="#treatments">Treatments</a><a href="#new-patients">New patients</a><a href="#visit">Visit us</a></nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Unhurried dental care for the whole family</h1>
+        <p class="lead sans">Check-ups, cleanings, whitening, clear aligners and implants on Northgate Avenue. New patients get a written treatment plan with prices before anything starts.</p>
+        <a class="btn" href="tel:5550142290">Call (555) 014-2290</a>
+        <a class="btn ghost" href="#treatments">See prices</a>
+      </div>
+      <div class="hours">
+        <h2>Opening hours</h2>
+        <table>
+          <tr><td>Monday to Thursday</td><td>8:00 to 18:00</td></tr>
+          <tr><td>Friday</td><td>8:00 to 15:00</td></tr>
+          <tr><td>First Saturday of the month</td><td>9:00 to 13:00</td></tr>
+          <tr><td>Sunday and holidays</td><td>Closed</td></tr>
+        </table>
+        <p class="small">Same-day emergency slots every weekday morning.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="block" id="treatments">
+    <div class="wrap">
+      <h2 class="title">Treatments and prices</h2>
+      <p class="sub sans">Prices below are what you pay without insurance. We send PPO claims for you.</p>
+      <div class="grid">
+        <div class="card"><h3>New patient exam</h3><p>Full check-up and X-rays if needed, with a written plan.</p><span class="price">$95</span></div>
+        <div class="card"><h3>Hygienist cleaning</h3><p>Scale and polish with Joanne Park.</p><span class="price">$85</span></div>
+        <div class="card"><h3>Children's check-up</h3><p>From age 2. First visit by the second birthday.</p><span class="price">$45</span></div>
+        <div class="card"><h3>Teeth whitening</h3><p>In-clinic in about 90 minutes, or a take-home kit with custom trays.</p><span class="price">$390 / $240</span></div>
+        <div class="card"><h3>Clear aligners</h3><p>Consultation with 3D scan. Full treatment is priced in your plan.</p><span class="price">from $150</span></div>
+        <div class="card"><h3>Dental implants</h3><p>Single implant with crown, with Dr. Amira Haddad.</p><span class="price">$2,900 to $3,400</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="new-patients">
+    <div class="wrap split">
+      <div>
+        <h2 class="title">New patients</h2>
+        <p>We take adults and children. Bring your insurance card to the first visit and the front desk checks your coverage before any treatment. Treatments over $500 can be split into 6 or 12 monthly payments with no interest.</p>
+      </div>
+      <div id="visit">
+        <h2 class="title">Visit us</h2>
+        <p>214 Northgate Avenue, Suite 3, above the pharmacy. Free patient parking behind the building, entrance on Elm Street. Step-free access with a lift.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Northgate Family Dental is a fictional clinic made for a software demo. Names, prices and contact details are not real.</div>
+</footer>
+
+<script src="/widget.js" data-title="Northgate Family Dental" data-subtitle="Usually replies in a few seconds" data-color="#0f766e" defer></script>
+</body>
+</html>
